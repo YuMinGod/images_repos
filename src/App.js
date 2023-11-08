@@ -57,7 +57,7 @@ function App() {
     <div className="App">
       <header className="Header">
         <div className="HeaderContent">
-          <img src={process.env.PUBLIC_URL + '/github-logo.png'} alt="GitHub Logo" className="GitHubLogo" />
+          <img src={process.env.PUBLIC_URL + '/github-logo.PNG'} alt="GitHub Logo" className="GitHubLogo" />
           <h1>Profile / Jung Yu Min</h1>
         </div>
         <nav className="Nav">
