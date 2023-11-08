@@ -1,38 +1,155 @@
 .App {
   text-align: center;
+  font-family: Arial, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Header {
+  background-color: #8ca9c5;
+  color: #fff;
+  padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.HeaderContent {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.GitHubLogo {
+  height: 50px;
+  margin-right: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Nav {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #683434;
+  font-weight: 600;
+}
+
+.active {
+  text-decoration: underline;
+}
+
+.Main {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.LeftSection {
+  flex: 1;
+}
+
+.RightSection {
+  flex: 1;
+}
+
+.LeftSectionImage {
+  max-width: 30%;
+  height: auto;
+  margin-right: -100px;
+  margin-bottom: 20px;
+  border-radius: 20%;
+}
+
+.LeftSectionText {
+  text-align: left;
+  margin-left: 200px;
+}
+
+.RightSectionText {
+  text-align: left;
+  margin-right: 200px;
+}
+
+.custom-btn {
+  width: 1000px;
+  height: 150px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+}
+
+.btn-16 {
+  border: none;
+  color: #000;
+}
+
+.btn-16:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  direction: rtl;
+  z-index: -1;
+  box-shadow:
+   -7px -7px 20px 0px #fff9,
+   -4px -4px 5px 0px #fff9,
+   7px 7px 20px 0px #0002,
+   4px 4px 5px 0px #0001;
+  transition: all 0.3s ease;
+}
+
+.btn-16:hover {
+  color: #000;
+}
+.btn-16:hover:after {
+  left: auto;
+  right: 0;
+  width: 100%;
+}
+.btn-16:active {
+  top: 2px;
+}
+
+.marquee {
+  font-weight: 600;
+  border: none;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.card {
+  text-align: center;
+  background: #fff;
+  border-radius: 2px;
+  display: inline-block;
+  height: 500px;
+  margin: 1rem;
+  position: relative;
+  width: 400px;
+}
+
+.card-1 {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.card-1:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.img {
+  margin-right: 10px;
+  height: 30px;
+  width: 30px;
 }
